@@ -39,7 +39,7 @@ describe('GET em /autores', () => {
         done();
       });
 
-    it('Deve retornar uma lista de livros', (done) => {
+    it('Deve retornar uma lista de livros', () => {
       const autorId = 1;
       chai.request(app)
         .get(`/autores/${autorId}/livros`)
